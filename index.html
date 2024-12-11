@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage 96 - Choco Berry</title>
+    <style>
+        body {
+            font-family: Consolas, style;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://assets.onecompiler.app/432e3dupr/432m4wewm/3.png");
+            color: #fed865
+        }
+        header {
+            background-color: #322e3c;
+            color: #de9444;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: large;
+            height: 200px;
+  
+        }
+        header img {
+          display: inline-block;
+          max-width: 50px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .product {
+            text-align: center;
+            color: #de9444;
+            padding: 2rem 0;
+            font-size: small;
+        }
+        .product img {
+            display: inline-block;
+            max-height: 150px;
+            border-radius: 5px;
+            
+        }
+        .Source {
+            text-align: center;
+            margin-top: 2rem 0;
+            color: #de9444;
+        }
+        
+        .geographic img {
+          text-align: center;
+          display: inline-block;
+          max-height: 120px;
+          border-radius: 5px;
+        
+        }
+        .processing {
+          text-align: center;
+          font-size: small;
+          color: #fed865;
+        }
+        .best brewing method {
+          text-align: center;
+          font-size:small;
+          display:inline-block;
+          max-width: 100px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #fed865;
+            color: #3a3332;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .image-container img {
+            display: none;
+            max-width: 360px;
+            margin-top: 10px;
+            image-orientation: center;
+        }
+        
+        .clickable-feature {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            padding: 15px;
+            background-color: #E1306C; /* Instagram pink */
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .clickable-feature:hover {
+            background-color: #b72c5d; /* Darker Instagram pink */
+            
+        }
+        .clickable-feature img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            text-align: center;
+        }
+  
+        footer {
+            text-align: center;
+            background-color: #0f492c;
+            color: #de9444;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        a {
+            color: #0f492c;
+            text-decoration: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+          <h1>Choco Berry</h1>
+          <p>Classic Roast Edition<p>
+            <img src="https://assets.onecompiler.app/432e3dupr/432e37s2x/Logo%20Heritage%2096.png" alt="Heritage Coffee Logo" class="logo">
+    </header>
+    <div class="container">
+        <section class="product">
+            <h2>Our Coffee</h2>
+            <p>Experience the classic and pleasent taste of <strong>Dark Chocolate</strong> with <strong>Dried Red Berry</strong> tasted coffee.</p>
+            <p>Choco Berry is one of the product line in heritage coffee classic roast edition line up. It's offer a pleasent and classical sensation of coffee that Malang has to offer. With its berry like acidity and sweetness and dark chocolate like sweetness and pleasent bitter, Choco Berry could gives you a strong coffee sensation with some senses of fruity twist.</p>
+           <img src="https://assets.onecompiler.app/432e3dupr/432m4wewm/2.png" style="display:inline-block;">
+           <img src="https://assets.onecompiler.app/432e3dupr/432m4wewm/11.png"  style="display:inline-block;">
+        </section>
+        <section class="Source">
+            <h2>Coffee source</h2>
+            <p>UB Forest Karangploso</p>
+           
+        </section>
+        <section class = "geographic img"
+        <p></p>
+        <img src="https://assets.onecompiler.app/432e3dupr/432e37s2x/Screenshot%202024-12-09%20062946.png" alt="geographic img">
+        <img src="https://assets.onecompiler.app/432e3dupr/432e37s2x/20241126_101438%20(1).jpg" alt="geographic img">
+        </section>
+    
+    <section class= "processing">
+      <h2>Processing Method</h2>
+      <p>Choco Berry is a mix variety Arjuna coffee (mostly komasti) which is processed using <strong>Immersed
+       anaerobic natural process with addition of lactic fermentation process</strong>. This process is performed to ensure the anaerobic condition and increase the availibility of enzymatic reaction, enabling the green bean to develop 
+       various flavor precursor which is transformed into a dried berry, grape, dark chocolate like flavor compound during roasting process</p>
+    </section>
+
+    <section class= "best brewing method">
+      <h2>Recomended Brewing Method</h2>
+    </section>
+    
+    <div class="output" id="output"></div>
+
+    <script>
+        function showMessage(message) {
+            // Display the message in the output div
+            document.getElementById("output").textContent = message;
+        }
+    </script>
+    
+    <button class="button" onclick="toggleImage('image1')">Cold Brew</button>
+    <button class="button" onclick="toggleImage('image2')">V60/Japanese Drip</button>
+    <button class="button" onclick="toggleImage('image3')">Tubruk</button>
+    
+    <div class="image-container">
+    <img id="image1" src="https://assets.onecompiler.app/432e3dupr/432m4wewm/5.png" alt="Cold Brew">
+    <img id="image2" src="https://assets.onecompiler.app/432e3dupr/432m4wewm/Sweet%20Pineapple%20(4).png" alt="V60/Japanese Drip">
+    <img id="image3" src="https://assets.onecompiler.app/432e3dupr/432m4wewm/7.png" alt="Tubruk">
+    </div>
+    
+    <script>
+    // JavaScript function to toggle image visibility
+    function toggleImage(imageId) {
+        const image = document.getElementById(imageId);
+        if (image.style.display === "none" || image.style.display === "") {
+            image.style.display = "block"; // Show the image
+        } else {
+            image.style.display = "none"; // Hide the image
+        }
+    }
+</script>
+    
+    </div> 
+    <a href="https://www.instagram.com/heritagegroup_id/" target="_blank" class="clickable-feature">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        Visit Instagram
+  
+    </a>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Heritage96. All rights reserved. | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
